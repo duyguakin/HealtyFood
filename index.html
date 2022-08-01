@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Roboto+Serif:opsz@8..144&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Roboto+Serif:opsz@8..144&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Project</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Roboto Serif', serif;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home img {
+    width: 100%;
+    height: 883px;
+    object-position: center;
+    object-fit: fill;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 82.5%, 1.69492% 84.3293%, 3.38983% 86.1385%, 5.08475% 87.9078%, 6.77966% 89.6179%, 8.47458% 91.25%, 10.1695% 92.7862%, 11.8644% 94.2098%, 13.5593% 95.505%, 15.2542% 96.6578%, 16.9492% 97.6555%, 18.6441% 98.487%, 20.339% 99.1435%, 22.0339% 99.6176%, 23.7288% 99.9041%, 25.4237% 100%, 27.1186% 99.9041%, 28.8136% 99.6176%, 30.5085% 99.1435%, 32.2034% 98.487%, 33.8983% 97.6555%, 35.5932% 96.6578%, 37.2881% 95.505%, 38.9831% 94.2098%, 40.678% 92.7862%, 42.3729% 91.25%, 44.0678% 89.6179%, 45.7627% 87.9078%, 47.4576% 86.1385%, 49.1525% 84.3293%, 50.8475% 82.5%, 52.5424% 80.6708%, 54.2373% 78.8616%, 55.9322% 77.0922%, 57.6271% 75.3821%, 59.322% 73.75%, 61.017% 72.2138%, 62.7119% 70.7902%, 64.4068% 69.495%, 66.1017% 68.3422%, 67.7966% 67.3446%, 69.4915% 66.513%, 71.1864% 65.8565%, 72.8814% 65.3824%, 74.5763% 65.0959%, 76.2712% 65%, 77.9661% 65.0959%, 79.661% 65.3824%, 81.3559% 65.8565%, 83.0509% 66.513%, 84.7458% 67.3446%, 86.4407% 68.3422%, 88.1356% 69.495%, 89.8305% 70.7902%, 91.5254% 72.2138%, 93.2203% 73.75%, 94.9153% 75.3821%, 96.6102% 77.0922%, 98.3051% 78.8616%, 100% 80.6708%, 100% 0%);
+    shape-outside: polygon(0% 0%, 0% 82.5%, 1.69492% 84.3293%, 3.38983% 86.1385%, 5.08475% 87.9078%, 6.77966% 89.6179%, 8.47458% 91.25%, 10.1695% 92.7862%, 11.8644% 94.2098%, 13.5593% 95.505%, 15.2542% 96.6578%, 16.9492% 97.6555%, 18.6441% 98.487%, 20.339% 99.1435%, 22.0339% 99.6176%, 23.7288% 99.9041%, 25.4237% 100%, 27.1186% 99.9041%, 28.8136% 99.6176%, 30.5085% 99.1435%, 32.2034% 98.487%, 33.8983% 97.6555%, 35.5932% 96.6578%, 37.2881% 95.505%, 38.9831% 94.2098%, 40.678% 92.7862%, 42.3729% 91.25%, 44.0678% 89.6179%, 45.7627% 87.9078%, 47.4576% 86.1385%, 49.1525% 84.3293%, 50.8475% 82.5%, 52.5424% 80.6708%, 54.2373% 78.8616%, 55.9322% 77.0922%, 57.6271% 75.3821%, 59.322% 73.75%, 61.017% 72.2138%, 62.7119% 70.7902%, 64.4068% 69.495%, 66.1017% 68.3422%, 67.7966% 67.3446%, 69.4915% 66.513%, 71.1864% 65.8565%, 72.8814% 65.3824%, 74.5763% 65.0959%, 76.2712% 65%, 77.9661% 65.0959%, 79.661% 65.3824%, 81.3559% 65.8565%, 83.0509% 66.513%, 84.7458% 67.3446%, 86.4407% 68.3422%, 88.1356% 69.495%, 89.8305% 70.7902%, 91.5254% 72.2138%, 93.2203% 73.75%, 94.9153% 75.3821%, 96.6102% 77.0922%, 98.3051% 78.8616%, 100% 80.6708%, 100% 0%);
+
+
+  }
+
+  header {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.589);
+  }
+
+  footer {
+    width: 100%;
+    height: 340px;
+    margin-top: -339px;
+    object-position: center;
+    position: relative;
+    z-index: -1;
+    background-color: #4d663be8;
+  }
+
+  .home {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 59%);
+  }
+
+  .homecontent {
+
+    transform: translate(70%, -50%);
+    top: 370px;
+    position: absolute;
+    right: 565px;
+  }
+
+  .homecontent h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'roboto', serif;
+
+  }
+
+  .homeContent a {
+    margin-top: 10px;
+  }
+
+  @media screen and(max-width: 600px) {
+    .home img {
+      height: 700px;
+    }
+
+    .homecontent h1 {
+      font-size: 40px;
+    }
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  header>p {
+
+    font-size: 20px;
+    margin-left: 20px;
+
+  }
+
+  .home-buttons {
+    top: 757px;
+    position: absolute;
+    right: 235px;
+    z-index: 2;
+  }
+
+  .home-buttons>p {
+    text-align: left;
+    font-size: 64px;
+    color: white;
+  }
+
+  .started {
+    background-color: #66aa35;
+    outline: none;
+    border: transparent;
+    border-radius: 10px;
+    width: 220px;
+    height: 60px;
+    color: white;
+    font-size: 19px;
+    bottom: 112px;
+    margin-right: 14px;
+    cursor: pointer;
+
+  }
+
+  ul {
+    justify-content: flex-end;
+
+  }
+
+  footer>p {
+    position: absolute;
+    top: 295px;
+    left: 16px;
+    color: white;
+    font-size: 13px;
+  }
+
+  ul>li {
+    padding-right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    list-style-type: none;
+  }
+
+  .loginRegister {
+    visibility: hidden;
+  }
+
+  #login>h3 {
+    text-align: center;
+  }
+
+
+  #login {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.589);
+    padding: 30px;
+    text-align: center;
+
+  }
+
+  .myform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  .modal-content {
+    background-color: #e4e4d9;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 809px;
+  }
+
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -25px;
+    margin-right: -10px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: black;
+
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+
+  .containerLogin {
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .sign-up,
+  .sign-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .sign-up {
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .sign-in {
+    width: 50%;
+    z-index: 2;
+  }
+
+  form {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: bold;
+    margin: 0;
+
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 20px;
+  }
+
+  input {
+    background: #eee;
+    padding: 12px 15px;
+    margin: 8px 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+
+
+
+  .buttons {
+    color: #fff;
+    background: #ff4b2b;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 55px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    outline: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+
+  }
+
+  .buttons:active {
+    transform: scale(0.90);
+  }
+
+  #signIn,
+  #signUp {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+
+  .containerLogin.right-panel-active .sign-in {
+    transform: translateX(100%);
+  }
+
+  .containerLogin.right-panel-active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+  }
+
+  .containerLogin.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+  }
+
+  .overlay {
+    position: relative;
+    color: #fff;
+    background: #ff416c;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(to right, #ff4b28, #ff228c);
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .containerLogin.right-panel-active .overlay {
+    transform: translateX(50%);
+  }
+
+  .overlay-left,
+  .overlay-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+
+  }
+
+
+
+  .overlay-right {
+    right: 0;
+    transform: translateX(0);
+  }
+
+  .container.right-panel-active .overlay-left {
+    transform: translateX(0);
+  }
+
+  .container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+  }
+
+  .social-container {
+    margin: 20px 0;
+  }
+
+  .social-container a {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+    margin: 10px 0 0 10px;
+  }
+
+  #login>img {
+    width: 30px;
+    height: 30px;
+  }
+</style>
+
+<body>
+  <div class="container">
+
+    <header class="row">
+      <div class="row">
+        <img src="https://cdn-icons-png.flaticon.com/512/860/860968.png" class="logo">
+        <p><a href="index.html">Healty Food</a></p>
+      </div>
+      <ul class="row">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="FoodRecipe.html">Food Recipe</a></li>
+        <li><a href="joinNow.html">Join Now</a></li>
+
+      </ul>
+
+    </header>
+
+
+    <div class="home">
+      <img src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514.jpg">
+      <div class="homecontent">
+        <div class="loginRegister" id="login">
+          <img src="https://cdn-icons-png.flaticon.com/512/889/889647.png">
+          <h3>To do this, you must be a member. <br>Go to the Get Started button
+            right now!</h3>
+
+
+        </div>
+        <h1>Start Eating <br />Healthy For Future</h1>
+
+      </div>
+
+    </div>
+
+
+    <div class="home-buttons">
+      <button class="started" id="myBtn">Get Started</button>
+      <div id="myModal" class="modal">
+
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="containerLogin" id="main">
+            <div class="sign-up">
+              <form action="#" id="sform">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p> or use your email for registration</p>
+                <input type="text" name="txt" placeholder="Name" required="" id="name">
+                <input type="email" name="email" placeholder="Email" required="" id="mail">
+                <input type="password" name="password" placeholder="Password" required="" id="confirm">
+                <button class="buttons" type="submit">Sign Up</button>
+
+              </form>
+            </div>
+            <div class="sign-in">
+              <form action="#" id="form">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p> or use your account</p>
+                <input type="email" name="email" placeholder="Email" required="" id="email">
+                <input type="password" name="password" placeholder="Password" required="" id="pass">
+                <a href="#">Forget your Password?</a>
+                <button class="buttons" type="submit">Sign In</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-left">
+                  <h1>Welcome Back!</h1>
+                  <p>To keep connected with us please login with your personal info</p>
+                  <button class="buttons" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-right">
+                  <h1>Hello, Friends</h1>
+                  <p>To keep connected with us please login with your personal info</p>
+                  <button class="buttons" id="signUp">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="started" id="bmi">BMI Calculator</button>
+    </div>
+    <footer>
+      <p>&copy;2022 All rights reserved</p>
+    </footer>
+</div>
+
+
+  <script>
+    
+    
+    //visibility
+    var d = document.getElementById("login");
+    function show() {
+      d.classList.toggle("loginRegister");
+    }
+    document.getElementById("bmi").addEventListener("click", show);
+
+
+    //modal
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const main = document.getElementById('main');
+
+    signUpButton.addEventListener('click', () =>{
+      main.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click', () =>{
+      main.classList.remove("right-panel-active");
+    });
+
+    document.getElementById("form").addEventListener("submit", auth);
+    function auth(event) {
+      event.preventDefault();
+
+      var email = document.getElementById("email").value;
+      var pass = document.getElementById("pass").value;
+      console.log(email);
+
+      if (email === "duygu@gmail.com" && pass === "user") {
+        window.location.replace("bmi.html");
+      } else if (email === " " || pass === " ") {
+        alert("Please enter ");
+      } else {
+        alert("Please enter valid information");
+        return;
+      }
+    }
+
+    document.getElementById("sform").addEventListener("submit", autho);
+    function autho(event) {
+      event.preventDefault();
+
+      var name = document.getElementById("name").value;
+      var mail = document.getElementById("mail").value;
+      var confirm = document.getElementById("confirm").value;
+
+      if (name === "duygu" && mail === "duygu@gmail.com") {
+        alert("You are successfully logged in... Please now click the SIGN IN button and login")
+      } else {
+        alert("Please enter valid information");
+        return;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
